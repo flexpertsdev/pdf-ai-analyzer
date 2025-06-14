@@ -1,46 +1,139 @@
-# Getting Started with Create React App
+# PDF AI Analyzer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A modern React application that allows users to upload PDF documents and extract information for AI-powered analysis.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+Visit the live application: [https://ornate-moonbeam-239b79.netlify.app](https://ornate-moonbeam-239b79.netlify.app)
 
-### `npm start`
+## 📋 Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+PDF AI Analyzer is a web-based tool designed to simplify document analysis workflows. Users can upload PDF files, and the application extracts text and metadata for intelligent analysis using AI capabilities.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## ✨ Key Features
 
-### `npm test`
+- **PDF Upload**: Drag-and-drop or click-to-upload interface for PDF files
+- **Text Extraction**: Automatic extraction of text content from uploaded PDFs
+- **AI Analysis**: Integration with AI services for intelligent document analysis
+- **Real-time Processing**: Instant feedback and processing status updates
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
+- **TypeScript**: Built with TypeScript for type safety and better developer experience
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠 Technology Stack
 
-### `npm run build`
+- **Frontend Framework**: React 18.3 with TypeScript
+- **Build Tool**: Create React App (with plans to migrate to Vite)
+- **Styling**: CSS Modules / Tailwind CSS (to be implemented)
+- **PDF Processing**: PDF.js for client-side PDF handling
+- **AI Integration**: OpenAI / Anthropic API (to be implemented)
+- **State Management**: React Context API / Zustand (to be implemented)
+- **Deployment**: Netlify
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## 🏗 Project Structure
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```
+pdf-ai-analyzer/
+├── public/              # Static assets
+├── src/
+│   ├── components/      # Reusable UI components
+│   ├── pages/          # Page-level components
+│   ├── services/       # API and external service integrations
+│   ├── hooks/          # Custom React hooks
+│   ├── types/          # TypeScript type definitions
+│   ├── utils/          # Utility functions
+│   └── App.tsx         # Main application component
+├── .gitignore
+├── package.json
+├── tsconfig.json
+└── README.md
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## 🚦 Getting Started
 
-### `npm run eject`
+### Prerequisites
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- Node.js 16.x or higher
+- npm or yarn package manager
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Installation
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+1. Clone the repository:
+```bash
+git clone https://github.com/flexpertsdev/pdf-ai-analyzer.git
+cd pdf-ai-analyzer
+```
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+2. Install dependencies:
+```bash
+npm install
+```
 
-## Learn More
+3. Create a `.env` file in the root directory and add your environment variables:
+```env
+REACT_APP_API_KEY=your_api_key_here
+REACT_APP_API_ENDPOINT=your_api_endpoint_here
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+4. Start the development server:
+```bash
+npm start
+```
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+The application will be available at `http://localhost:3000`.
+
+## 📝 Available Scripts
+
+- `npm start` - Runs the app in development mode
+- `npm test` - Launches the test runner
+- `npm run build` - Builds the app for production
+- `npm run eject` - Ejects from Create React App (one-way operation)
+
+## 🔧 Configuration
+
+The application can be configured through environment variables:
+
+- `REACT_APP_API_KEY` - API key for AI service integration
+- `REACT_APP_API_ENDPOINT` - API endpoint URL
+- `REACT_APP_MAX_FILE_SIZE` - Maximum allowed PDF file size (in MB)
+
+## 📈 Roadmap
+
+- [ ] Implement PDF upload component
+- [ ] Add PDF.js integration for text extraction
+- [ ] Create AI analysis service integration
+- [ ] Add user authentication
+- [ ] Implement document history and management
+- [ ] Add export functionality for analysis results
+- [ ] Improve UI/UX with modern design system
+- [ ] Add support for batch PDF processing
+- [ ] Implement advanced search within documents
+- [ ] Add multi-language support
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request.
+
+1. Fork the project
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## 👥 Team
+
+- **Developer**: Flexperts Dev Team
+- **Contact**: [GitHub Profile](https://github.com/flexpertsdev)
+
+## 🔗 Links
+
+- **GitHub Repository**: [https://github.com/flexpertsdev/pdf-ai-analyzer](https://github.com/flexpertsdev/pdf-ai-analyzer)
+- **Live Application**: [https://ornate-moonbeam-239b79.netlify.app](https://ornate-moonbeam-239b79.netlify.app)
+- **Issues**: [GitHub Issues](https://github.com/flexpertsdev/pdf-ai-analyzer/issues)
+
+---
+
+Built with ❤️ by the Flexperts Dev Team
